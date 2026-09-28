@@ -1,0 +1,10 @@
+title: LuDa Yu
+description: A short professional introduction.
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:title/
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

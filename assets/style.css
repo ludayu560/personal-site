@@ -1,0 +1,331 @@
+/* Theme and base elements */
+
+:root {
+  color-scheme: light;
+  font: 17px/1.65 system-ui, -apple-system, Segoe UI, sans-serif;
+
+  --page: #eaf3e9;
+  --text: #20382b;
+  --muted: #58705f;
+  --green: #245c3d;
+  --green-dark: #17432d;
+  --border: #cbdccb;
+
+  color: var(--text);
+  background: var(--page);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+}
+
+::selection {
+  color: var(--text);
+  background: #c5e3ca;
+}
+
+a {
+  color: var(--green);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--green-dark);
+}
+
+a:focus-visible,
+.experience-panel:focus-visible,
+.experience-item:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 1.35rem;
+}
+
+p,
+li {
+  max-width: 65ch;
+}
+
+/* Shared layout */
+
+.container {
+  width: min(80%, 720px);
+  margin: auto;
+}
+
+main {
+  min-height: 60vh;
+  padding: 3rem 0 4rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* Blog */
+
+.posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.posts li {
+  margin: 0.8rem 0;
+}
+
+time {
+  margin-right: 0.6rem;
+  color: var(--muted);
+}
+
+/* Home page columns */
+
+.home-page .container {
+  display: flex;
+  flex-direction: column;
+  width: min(80%, 1440px);
+  height: 100svh;
+  min-height: 0;
+}
+
+.home-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  padding: 2rem 0;
+}
+
+.home-layout {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  min-height: 0;
+}
+
+/* Intro column */
+
+.intro-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.intro-content {
+  max-width: 430px;
+}
+
+.intro-panel p:not(.eyebrow):not(.role) {
+  color: var(--muted);
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.role {
+  color: var(--green);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.intro-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.intro-links a {
+  display: inline-flex;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.intro-links svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-nav {
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+/* Experience column */
+
+.experience-panel {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.experience-panel::-webkit-scrollbar {
+  display: none;
+}
+
+.experience-panel h2 {
+  margin: 0 0 2rem;
+}
+
+.experience-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.experience-role {
+  margin: 0.4rem 0 0;
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.experience-company {
+  margin: 0.15rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.experience-summary {
+  color: var(--muted);
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-skills li {
+  max-width: none;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--green-dark);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Story inside each experience */
+
+.experience-story {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms ease;
+}
+
+.experience-story-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.experience-item:hover .experience-story,
+.experience-item:focus-visible .experience-story {
+  grid-template-rows: 1fr;
+}
+
+.experience-story h4 {
+  margin: 1.5rem 0 0.75rem;
+  color: var(--green-dark);
+  font-size: 1rem;
+}
+
+.experience-story p {
+  margin: 0.5rem 0;
+  color: var(--muted);
+}
+
+/* Narrow screens: scroll the whole page */
+
+@media (max-width: 600px) {
+  .home-page .container {
+    width: min(100% - 2rem, 720px);
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .home-main,
+  .home-layout {
+    display: block;
+  }
+
+  .intro-panel {
+    margin-bottom: 2rem;
+  }
+
+  .intro-nav {
+    margin-top: 2rem;
+    padding-top: 0;
+  }
+
+  .experience-panel {
+    overflow: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-story {
+    transition: none;
+  }
+}

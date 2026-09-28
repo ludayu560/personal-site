@@ -1,0 +1,84 @@
+- period: "May 2024 - January 2026"
+  role: "Fullstack Developer"
+  organization: "BakerRisk"
+  summary: "Built client portals and engineering tools, modernized legacy applications, and improved reliability through automated testing and data safeguards. Owned products from concept to delivery and mentored interns."
+  skills:
+    - C#
+    - .NET
+    - VBA
+    - TypeScript
+    - Next.js
+    - Tailwind CSS
+    - MySQL
+    - PDFSharp
+    - Azure DevOps
+  project_story:
+    title: "A data collection tool "
+    body: >-
+      Clients previously waited for reports to arrive by email, while the
+      accounting team maintained subscription lists by hand. I built a portal
+      where clients could access the reports available to them as soon as they
+      were ready. It removed the monthly delivery workflow and made report
+      access and billing more accurate.
+
+- period: "September 2023 - January 2024"
+  role: "Fullstack Developer Intern"
+  organization: "Avante IO"
+  summary: "Improved a production Django platform, built a frontend prototype for an AI-driven product, and automated cloud deployments. Expanded test coverage and simplified backend configuration."
+  skills:
+    - Python
+    - Django
+    - React
+    - Redux
+    - Pytest
+    - Docker
+    - GitHub Actions
+    - AWS ECS
+    - AWS S3
+
+- period: "January 2023 - May 2023"
+  role: "Frontend Developer "
+  organization: "Aisha Comfortable Coliving"
+  summary: "Led a development team building core website services. Deployed secure AWS infrastructure, refactored the frontend, and reduced build time by 47%."
+  skills:
+    - React
+    - TypeScript
+    - Redux
+    - MUI
+    - AWS EC2
+    - AWS S3
+    - Route 53
+    - nginx
+    - Gunicorn
+
+- period: "May 2022 - August 2022"
+  role: "IT Support Student"
+  organization: "Department of National Defence"
+  summary: "Supported secure network infrastructure and a 150-person departmental relocation. Maintained workstations, installed server hardware, and helped staff resolve technical issues."
+  skills:
+    - IT Support
+    - Network Infrastructure
+    - Hardware Maintenance
+    - Technical Documentation
+    - User Training
+
+- period: "April 2021 - August 2021"
+  role: "IT Support Analyst"
+  organization: "Regional Municipality of York"
+  summary: "Provided technical support to regional staff and helped onboard iOS devices into centralized device management. Worked directly with users to troubleshoot hardware and software issues."
+  skills:
+    - IT Support
+    - iOS Device Management
+    - Microsoft Azure
+    - Troubleshooting
+    - Technical Communication
+
+- period: "August 2019 - May 2020"
+  role: "Bank Teller"
+  organization: "Scotiabank"
+  summary: "Served customers and coordinated with colleagues, adapting communication to accommodate diverse needs and disabilities."
+  skills:
+    - Customer Service
+    - Communication
+    - Accessibility
+    - Teamwork

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Writing
+permalink: /blog/
+---
+<h1>Writing</h1>
+{% if site.posts.size > 0 %}
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time> <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Notes and essays will appear here.</p>
+{% endif %}
