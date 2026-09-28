@@ -56,11 +56,6 @@ h2 {
   font-size: 1.35rem;
 }
 
-p,
-li {
-  max-width: 65ch;
-}
-
 /* Shared layout */
 
 .container {
