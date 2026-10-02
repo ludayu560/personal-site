@@ -8,7 +8,7 @@ home: true
     <div class="intro-content">
       <p class="eyebrow">Hello World! I'm</p>
       <h1 id="intro-title">LuDa Yu</h1>
-      <p class="role">Fullstack Developer</p>
+      <!-- <p class="role">Software Developer</p> -->
       <p>
         I'm a software developer who builds practical tools and makes complex
         systems easier to use and maintain.
@@ -68,14 +68,18 @@ home: true
         <li>{{ skill | escape }}</li>
         {% endfor %}
       </ul>
-      {% endif %} {% if job.project_story %} {% assign story = job.project_story
-      %}
+      {% endif %} {% if job.project_stories.size > 0 %}
       <div class="experience-story">
         <div class="experience-story-inner">
-          <h4>{{ story.title | escape }}</h4>
-          <div class="experience-story-copy">
-            {{ story.body | markdownify }}
+          {% for story in job.project_stories %}
+          <div class="experience-story-content">
+            <h4>{{ story.title | escape }}</h4>
+
+            <div class="experience-story-copy">
+              {{ story.body | markdownify }}
+            </div>
           </div>
+          {% endfor %}
         </div>
       </div>
       {% endif %}

@@ -280,6 +280,11 @@ time {
   overflow: hidden;
 }
 
+.experience-story-content {
+  margin-top: 1.5rem;
+  padding-left: 2.5rem;
+}
+
 .experience-item:hover .experience-story,
 .experience-item:focus-visible .experience-story {
   grid-template-rows: 1fr;
