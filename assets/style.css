@@ -56,11 +56,6 @@ h2 {
   font-size: 1.35rem;
 }
 
-p,
-li {
-  max-width: 65ch;
-}
-
 /* Shared layout */
 
 .container {
@@ -76,17 +71,22 @@ main {
 .site-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 2.1rem 0;
+  padding: 2.1rem 0 0.85rem;
   border-bottom: 1px solid var(--border);
 }
 
 .brand {
-  color: var(--text);
-  font-weight: 700;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 nav {
@@ -278,6 +278,11 @@ time {
 .experience-story-inner {
   min-height: 0;
   overflow: hidden;
+}
+
+.experience-story-content {
+  margin-top: 1.5rem;
+  padding-left: 2.5rem;
 }
 
 .experience-item:hover .experience-story,

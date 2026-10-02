@@ -23,13 +23,18 @@
   <div class="container">
     {% unless page.home %}
       <header class="site-header">
-        <a class="brand" href="{{ '/' | relative_url }}">
-          {{ site.title | escape }}
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+          <img
+            src="{{ '/assets/favicon.svg' | relative_url }}"
+            alt="LY"
+            width="40"
+            height="40"
+          >
         </a>
 
         <nav aria-label="Main navigation">
           <a href="{{ '/about/' | relative_url }}">About</a>
-          <a href="{{ '/projects/' | relative_url }}">Projects</a>
+          <!-- <a href="{{ '/projects/' | relative_url }}">Projects</a> -->
           <a href="{{ '/blog/' | relative_url }}">Writing</a>
         </nav>
       </header>
