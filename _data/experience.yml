@@ -28,7 +28,7 @@
     - title: "Data Collection Tool"
       body: >-
         After each site visit, engineers had to transcribe their digital notes and
-        manually enter the data into risk assessment software. I worked closely
+        manually enter data into risk assessment software. I worked closely
         with them to build an on-site note-taking tool with an export function,
         allowing the collected data to be transferred directly into risk assessment software. 
         This reduced project turnaround time and saved approximately $10,000 per engineering project.
@@ -39,7 +39,7 @@
   summary: >-
     Improved a package tracking platform, built a frontend prototype for an
     AI-driven product, and automated cloud deployments. Expanded test coverage
-    and simplified backend configuration.
+    and resolved customer reported bugs.
   skills:
     - Python
     - Django
@@ -50,10 +50,14 @@
     - GitHub Actions
     - AWS ECS
     - AWS S3
-  # project_stories:
-  #   - title: "Avante EasyTag"
-  #     body: >-
-  #       Bug catching and enhancements
+  project_stories:
+    - title: "Consili UI Prototype"
+      body: >-
+        I independently built the frontend prototype for [Consili](https://avante.io/consili),
+        an AI-driven product, using React, Redux, and Mantine. I translated
+        evolving requirements into an interactive interface that made the
+        proposed experience tangible for stakeholders and received positive
+        feedback on the prototype.
 
 - period: "January 2023 - May 2023"
   role: "Frontend Developer"
@@ -71,10 +75,14 @@
     - Route 53
     - nginx
     - Gunicorn
-  # project_stories:
-  #   - title: "Frontend Leadership"
-  #     body: >-
-  #       Developed a site with leadership
+  project_stories:
+    - title: "Owning a Project"
+      body: >-
+        At ACC, my responsibilities extended beyond the features I was building.
+        I helped divide the work across a small team and worked through integration
+        issues as our contributions came together. It was an introduction to
+        product ownership, where I had to balance hands-on development with
+        keeping track of how everyone's work fit into the product.
 
 - period: "May 2022 - August 2022"
   role: "IT Support Student"
