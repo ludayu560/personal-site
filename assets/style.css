@@ -104,6 +104,47 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* About */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: 2rem;
+}
+
+.about-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.about-text p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+
 /* Blog */
 
 .posts {
