@@ -48,6 +48,7 @@
     - Pytest
     - Docker
     - GitHub Actions
+    - Regression Testing
     - AWS ECS
     - AWS S3
   project_stories:
